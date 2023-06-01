@@ -26,7 +26,7 @@ app.use("/api/v1/users", userRouter);
 app.use("/api/v1/task", taskRouter);
 
 app.get("/", (req, res) => {
-  res.send("Nice One Boy");
+  res.send("Working");
 });
 
 // Using Error Middleware

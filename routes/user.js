@@ -3,13 +3,13 @@ import {
   getMyProfile,
   login,
   logout,
-  registerUser,
+  register,
 } from "../controllers/user.js";
 import { isAuthenticated } from "../middlewares/auth.js";
 
 const router = express.Router();
 
-router.post("/new", registerUser);
+router.post("/new", register);
 
 router.post("/login", login);
 

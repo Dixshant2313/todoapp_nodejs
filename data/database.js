@@ -5,6 +5,6 @@ export const connectDB = () => {
     .connect(process.env.MONGO_URI, {
       dbName: "backendapi",
     })
-    .then(() => console.log("Connected to MongoDB"))
-    .catch((err) => console.error(err));
+    .then((c) => console.log(`Database Connected with ${c.connection.host}`))
+    .catch((e) => console.log(e));
 };
